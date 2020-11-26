@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <title>Table Tennis</title>
+     </head>
+     <body>
+         <canvas id="canvas" width="300" height="300"></canvas>
+         <input type="button" onclick="draw()" value="Draw"/> <br/>
+         <input type="button" onclick="clear()" value="Clear"/> <br/>
+         <script type="text/javascript">
+             var canvas = document.getElementById("canvas")
+             var ctx = canvas.getContent("2d")
+             function draw() {
+               ctx.fillStyle = "black";
+               ctx.fillRect(0, 30, 30);
+             }
+             function remove() {
+               ctx.clearRect(0, 300, 300);
+             }
+         </script>
+     </body>
